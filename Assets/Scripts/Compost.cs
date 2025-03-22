@@ -19,7 +19,9 @@ public class Compost : MonoBehaviour
     private IEnumerator compost(Plant plant){
 
         yield return new WaitForSeconds(plant.PlantData.decompositionTime); 
-        ResourceManager.Instance.compostAmount += plant.Poids;
+        //Calcul de la valeur de compost à retourner
+        float valComp = (plant.Poids * 10) * plant.GetQuality(); 
+        ResourceManager.Instance.compostAmount += valComp;
         Destroy(plant); 
     }
 
