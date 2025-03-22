@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32d1f1038c14c8f88d456bcd191dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 2069467548267074144}
   pots: []
 --- !u!1 &698096611
 GameObject:
@@ -684,11 +685,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1697500743462626116, guid: e4ff3a127361857799ee191937ebe1eb, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -288
+      value: 48.1
       objectReference: {fileID: 0}
     - target: {fileID: 1697500743462626116, guid: e4ff3a127361857799ee191937ebe1eb, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -191
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 1697500743462626116, guid: e4ff3a127361857799ee191937ebe1eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
