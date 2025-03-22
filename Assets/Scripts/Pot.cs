@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.PlayerLoop;
@@ -26,6 +27,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
 
     private IEnumerator GrowCycle()
     {
+        yield return new WaitForFixedUpdate();
         float stepTime = plant.PlantData.GrowingTime / 4.0f;
         if (plant.PlantData.plantSprites.Count < 4)
         {

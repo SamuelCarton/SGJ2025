@@ -1991,7 +1991,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1689253058922410191}
         m_TargetAssemblyTypeName: PotUI, Assembly-CSharp
-        m_MethodName: OnClick
+        m_MethodName: OnSelectCrop
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: a833127012b382f4bb9200f6a2f72ef8, type: 2}
@@ -2636,7 +2636,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9036654972124041582}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
