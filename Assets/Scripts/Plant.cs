@@ -5,7 +5,12 @@ public class Plant : MonoBehaviour, IDraggable
 {
     public Plant_Data PlantData;
     public float Poids;
-    public float HeavyMetalRatio;
+    public float ToxicRatio = 0.0f;
+    public float WaterRatio = 0.0f;
+    public float LightTime = 0.0f;
+    public bool isScanned = false;
+    public bool isComestible = false; 
+    
     [SerializeField] private Image plantImage;
 
     public float GetQuality()
