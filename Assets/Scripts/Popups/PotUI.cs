@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PotUI : MonoBehaviour
 {
-    [SerializeField] private Text _tittle;
+    [SerializeField] private TextMeshProUGUI _tittle;
     [SerializeField] private TextMeshProUGUI _regolithValue;
     [SerializeField] private TextMeshProUGUI _fetilizerValue;
     [SerializeField] private Image _cropIcon;
@@ -35,12 +35,14 @@ public class PotUI : MonoBehaviour
     public void OpenUI(Pot in_pot)
     {
         pot = in_pot;
+        _cropIcon.enabled = false;
     }
 
     public void OnSelectCrop(Plant_Data data)
     {
         _tittle.text = data.plantName;
         _cropIcon.sprite = data.plantSprites[0];
+        _cropIcon.enabled = true;
     }
 
     public void OnValidateParameters()
