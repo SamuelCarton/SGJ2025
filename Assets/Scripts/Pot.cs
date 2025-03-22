@@ -7,6 +7,7 @@ using UnityEngine.PlayerLoop;
 public class Pot : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private GameObject plantPrefab;
+    
     public Plant plant;
     
 
@@ -14,7 +15,8 @@ public class Pot : MonoBehaviour, IPointerDownHandler
     
     public void StartGrowing(Plant_Data plantData, PlantParameter plantParametter)
     {
-        GameObject plantInstance = Instantiate(plantPrefab,  transform.position, Quaternion.identity);
+        GameObject plantInstance = Instantiate(plantPrefab, PotsManager.Instance.GetCanvas());
+        plantInstance.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
         plant = plantInstance.GetComponent<Plant>();
         plant.PlantData = plantData;
         plant.LightTime = plantParametter.Light;
