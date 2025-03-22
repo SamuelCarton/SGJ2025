@@ -5,6 +5,7 @@ using UnityEngine;
 public class Plant_Data : ScriptableObject
 {
     public string plantName;
+    public float decompositionTime; 
     public List<Sprite> plantSprites = new List<Sprite>();
 
     [Header("Comestible")]
