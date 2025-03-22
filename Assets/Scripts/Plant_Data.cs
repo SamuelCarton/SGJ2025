@@ -4,5 +4,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PlantData", menuName = "SGJ2025/PlantData")]
 public class Plant_Data : ScriptableObject
 {
-    public List<Sprite> plantSprites;
+    public string plantName;
+    public List<Sprite> plantSprites = new List<Sprite>();
+    
+    
 }
