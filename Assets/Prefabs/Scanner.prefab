@@ -348,6 +348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2632728997600072709}
   - component: {fileID: 1567895487918709618}
+  - component: {fileID: 3768330728068057420}
   m_Layer: 5
   m_Name: Visuals
   m_TagString: Untagged
@@ -396,6 +397,18 @@ MonoBehaviour:
   - {fileID: 4820936779072753850}
   switchDelay: 0.4
   switchRandomRange: 0.2
+--- !u!114 &3768330728068057420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838826876931858160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7603000e1bcbf751fad30d9f3f7d2888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4820936779072753850
 GameObject:
   m_ObjectHideFlags: 0
