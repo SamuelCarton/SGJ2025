@@ -79,6 +79,7 @@ MonoBehaviour:
   PlantData: {fileID: 11400000, guid: a833127012b382f4bb9200f6a2f72ef8, type: 2}
   Poids: 0
   HeavyMetalRatio: 0
+  plantImage: {fileID: 1841739046829387261}
 --- !u!1 &5475861985718300794
 GameObject:
   m_ObjectHideFlags: 0
