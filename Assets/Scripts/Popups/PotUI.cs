@@ -15,6 +15,7 @@ public class PotUI : MonoBehaviour
     [SerializeField]  private Slider _waterSlider;
     [SerializeField] private Slider _lightSlider;
     [SerializeField] private Slider _fertilizerSlider;
+    [SerializeField] private Vector2 offset = new Vector2(1087,-137) - new Vector2(375,-175);
     
     private PlantParameter _plantParametter = new PlantParameter();
     private Pot pot;
@@ -38,8 +39,12 @@ public class PotUI : MonoBehaviour
     public void OpenUI(Pot in_pot)
     {
         pot = in_pot;
+        _plantData = null;
+        _tittle.text = "";
         _cropIcon.enabled = false;
         _startCompostValue = ResourceManager.Instance.compostAmount;
+        OnFertilizerSliderValueChanged(_fertilizerSlider.value);
+        GetComponent<RectTransform>().anchoredPosition = in_pot.GetComponent<RectTransform>().anchoredPosition + offset;
     }
 
     public void OnSelectCrop(Plant_Data data)
@@ -52,6 +57,11 @@ public class PotUI : MonoBehaviour
 
     public void OnValidateParameters()
     {
+        if (_plantData == null)
+        {
+            UIManager.Instance.OpenPopup("Sélectionez une Graine à planter avant de Valider");
+            return;
+        }
         pot.StartGrowing(_plantData, _plantParametter);
         gameObject.SetActive(false);
     }
