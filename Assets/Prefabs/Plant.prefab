@@ -78,7 +78,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlantData: {fileID: 11400000, guid: a833127012b382f4bb9200f6a2f72ef8, type: 2}
   Poids: 0
-  HeavyMetalRatio: 0
+  ToxicRatio: 0
+  WaterRatio: 0
+  LightTime: 0
+  isScanned: 0
+  isComestible: 0
   plantImage: {fileID: 1841739046829387261}
 --- !u!1 &5475861985718300794
 GameObject:
@@ -150,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 75, y: 75}
+  m_AnchoredPosition: {x: -9, y: 0}
+  m_SizeDelta: {x: 291.0362, y: 291.0362}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8550315346240959001
 CanvasRenderer:
@@ -174,14 +178,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13620546, g: 0.6792453, b: 0.07369172, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: d4876255edf58ba8792ac21d37d832ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
