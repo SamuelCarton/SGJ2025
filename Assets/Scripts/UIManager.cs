@@ -14,10 +14,13 @@ public class UIManager : MonoBehaviour
 
     public void OpenPotUI(Pot pot)
     {
-        
+        potUI.OpenUI(pot);
+        potUI.gameObject.SetActive(true);
     }
 
-    public void OpenScannerUI(){
+    public void OpenScannerUI(Plant plant){
+        scannerUI.putVals(plant); 
+        scannerUI.gameObject.SetActive(true);
         
     }
 }

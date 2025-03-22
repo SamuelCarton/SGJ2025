@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.PlayerLoop;
@@ -6,15 +7,21 @@ using UnityEngine.PlayerLoop;
 public class Pot : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private GameObject plantPrefab;
+    
     public Plant plant;
     
 
     public float water;
     
-    public void StartGrowing(Plant_Data plantData)
+    public void StartGrowing(Plant_Data plantData, PlantParameter plantParametter)
     {
-        GameObject plantInstance = Instantiate(plantPrefab,  transform.position, Quaternion.identity);
+        GameObject plantInstance = Instantiate(plantPrefab, PotsManager.Instance.GetCanvas());
+        plantInstance.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
         plant = plantInstance.GetComponent<Plant>();
+        plant.PlantData = plantData;
+        plant.LightTime = plantParametter.Light;
+        plant.WaterRatio = plantParametter.Water;
+        plant.ToxicRatio = 1 - plantParametter.Fertilizer;
         
         IEnumerator coroutine = GrowCycle();
         StartCoroutine(coroutine);
@@ -22,6 +29,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
 
     private IEnumerator GrowCycle()
     {
+        yield return new WaitForFixedUpdate();
         float stepTime = plant.PlantData.GrowingTime / 4.0f;
         if (plant.PlantData.plantSprites.Count < 4)
         {

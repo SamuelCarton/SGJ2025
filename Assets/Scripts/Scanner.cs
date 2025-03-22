@@ -15,7 +15,7 @@ public class Scanner : MonoBehaviour
         plant.LightTime
         */
 
-        UIManager.Instance.OpenScannerUI(); 
+        UIManager.Instance.OpenScannerUI(plant); 
 
     }
     
