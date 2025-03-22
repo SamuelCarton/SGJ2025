@@ -21,6 +21,12 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        Plant plant = eventData.pointerDrag.GetComponent<Plant>();
+        if (plant != null)
+        {
+            plant.SetSprite(plant.PlantData.SpriteFull);
+        }
+            
         canvasGroup.alpha = alphaOnDrag;
         canvasGroup.blocksRaycasts = false;
     }

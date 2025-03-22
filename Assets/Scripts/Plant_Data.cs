@@ -9,6 +9,7 @@ public class Plant_Data : ScriptableObject
     public float decompositionTime; 
     public float fertilizerAmount; 
     public List<Sprite> plantSprites = new List<Sprite>();
+    public Sprite SpriteFull;
     public float GrowingTime;
 
     [Header("Comestible")]
