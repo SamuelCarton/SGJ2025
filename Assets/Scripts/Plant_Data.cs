@@ -6,6 +6,8 @@ public class Plant_Data : ScriptableObject
 {
     public string plantName;
     public List<Sprite> plantSprites = new List<Sprite>();
-    
+
+    [Header("Quality")]
+    public float HeavyMetalMinRatio;
     
 }
