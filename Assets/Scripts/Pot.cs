@@ -21,6 +21,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         plant.LightTime = plantParametter.Light;
         plant.WaterRatio = plantParametter.Water;
         plant.ToxicRatio = 1 - plantParametter.Fertilizer;
+        plant.Weight = plantData.fertilizerAmount * plantData.PlantValidConditionRatio(plantParametter);
         
         IEnumerator coroutine = GrowCycle();
         StartCoroutine(coroutine);

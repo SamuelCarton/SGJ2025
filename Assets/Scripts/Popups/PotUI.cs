@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
@@ -17,6 +19,7 @@ public class PotUI : MonoBehaviour
     private PlantParameter _plantParametter = new PlantParameter();
     private Pot pot;
     private Plant_Data _plantData;
+    private float _startCompostValue;
 
     private void Start()
     {
@@ -36,6 +39,7 @@ public class PotUI : MonoBehaviour
     {
         pot = in_pot;
         _cropIcon.enabled = false;
+        _startCompostValue = ResourceManager.Instance.compostAmount;
     }
 
     public void OnSelectCrop(Plant_Data data)
@@ -64,6 +68,15 @@ public class PotUI : MonoBehaviour
 
     private void OnFertilizerSliderValueChanged(float value)
     {
-        _plantParametter.Fertilizer =  1 - value;
+        ResourceManager.Instance.compostAmount = _startCompostValue;
+        if (value * ResourceManager.Instance.TotalMaterialInPot > ResourceManager.Instance.compostAmount)
+        {
+            value = _startCompostValue / ResourceManager.Instance.TotalMaterialInPot;
+            _fertilizerSlider.value = value;
+        }
+        _plantParametter.Fertilizer = value;
+        _fetilizerValue.text = "Fertilizer: " + (value * 100).ToString("F2") + "%";
+        _regolithValue.text = "Regolith: " + ((1 - value) * 100).ToString("F2") + "%";
+        ResourceManager.Instance.AddCompost(-value * ResourceManager.Instance.TotalMaterialInPot);
     }
 }
