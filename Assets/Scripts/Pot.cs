@@ -11,7 +11,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
 
     public float water;
     
-    public void StartGrowing(Plant_Data plantData, PlantParametter plantParametter)
+    public void StartGrowing(Plant_Data plantData, PlantParameter plantParametter)
     {
         GameObject plantInstance = Instantiate(plantPrefab,  transform.position, Quaternion.identity);
         plant = plantInstance.GetComponent<Plant>();

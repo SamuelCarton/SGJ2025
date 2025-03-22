@@ -1,4 +1,4 @@
-﻿public class PlantParametter
+﻿public class PlantParameter
 {
     public float Water;
     public float Light;
