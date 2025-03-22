@@ -8,18 +8,17 @@ public class ItemSlot : MonoBehaviour, IDropHandler
     
     public void OnDrop(PointerEventData eventData)
     {
+        IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
+        if (draggable == null || draggable.CanBeDragged() == false)
+        {
+            return;
+        }
         if (eventData.pointerDrag == null)
         {
             return;
         }
         eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition 
             = GetComponent<RectTransform>().anchoredPosition;
-            
-        IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
-        if (draggable == null)
-        {
-            return;
-        } 
         onDrop.Invoke(draggable);
     }
 }

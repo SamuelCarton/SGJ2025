@@ -2,22 +2,21 @@
 
 public class Scanner : MonoBehaviour
 {
-    public void ScanPlant(Plant plant)
+    public void ScanPlant(IDraggable draggable)
     {
+        if (draggable is not Plant)
+        {
+            return;
+        }
+        Plant plant = (Plant) draggable;
+        
         if(plant.GetQuality() >= 0.99){
             plant.isComestible = true; 
         }
 
         plant.isScanned = true;
-        /*
-        plant.ToxicRatio
-        plant.WaterRatio
-        plant.LightTime
-        */
 
         UIManager.Instance.OpenScannerUI(plant); 
 
     }
-    
-    
 }

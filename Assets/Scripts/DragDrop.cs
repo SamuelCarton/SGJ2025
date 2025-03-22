@@ -21,19 +21,39 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
+        if (draggable == null || draggable.CanBeDragged() == false)
+        {
+            return;
+        }
+        Plant plant = eventData.pointerDrag.GetComponent<Plant>();
+        if (plant != null)
+        {
+            plant.SetSprite(plant.PlantData.SpriteFull);
+        }
+            
         canvasGroup.alpha = alphaOnDrag;
         canvasGroup.blocksRaycasts = false;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
+        if (draggable == null || draggable.CanBeDragged() == false)
+        {
+            return;
+        }
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        
+        IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
+        if (draggable == null || draggable.CanBeDragged() == false)
+        {
+            return;
+        }
         rectTransform.anchoredPosition += eventData.delta;
     }
 }

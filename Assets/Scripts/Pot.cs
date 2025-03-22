@@ -9,7 +9,6 @@ public class Pot : MonoBehaviour, IPointerDownHandler
     [SerializeField] private GameObject plantPrefab;
     
     public Plant plant;
-    
 
     public float water;
     
@@ -22,6 +21,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         plant.LightTime = plantParametter.Light;
         plant.WaterRatio = plantParametter.Water;
         plant.ToxicRatio = 1 - plantParametter.Fertilizer;
+        plant.Weight = plantData.fertilizerAmount * plantData.PlantValidConditionRatio(plantParametter);
         
         IEnumerator coroutine = GrowCycle();
         StartCoroutine(coroutine);
@@ -43,6 +43,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         plant.SetSprite(plant.PlantData.plantSprites[2]);
         yield return new WaitForSeconds(stepTime);
         plant.SetSprite(plant.PlantData.plantSprites[3]);
+        plant.SetDraggable(true);
     }
 
     public void OnPointerDown(PointerEventData eventData)
