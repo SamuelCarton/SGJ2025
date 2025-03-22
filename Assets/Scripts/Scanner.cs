@@ -18,6 +18,4 @@ public class Scanner : MonoBehaviour
         UIManager.Instance.OpenScannerUI(plant); 
 
     }
-    
-    
 }
