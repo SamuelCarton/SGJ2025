@@ -11,10 +11,14 @@ public class Pot : MonoBehaviour, IPointerDownHandler
 
     public float water;
     
-    public void StartGrowing(Plant_Data plantData)
+    public void StartGrowing(Plant_Data plantData, PlantParametter plantParametter)
     {
         GameObject plantInstance = Instantiate(plantPrefab,  transform.position, Quaternion.identity);
         plant = plantInstance.GetComponent<Plant>();
+        plant.PlantData = plantData;
+        plant.LightTime = plantParametter.Light;
+        plant.WaterRatio = plantParametter.Water;
+        plant.ToxicRatio = 1 - plantParametter.Fertilizer;
         
         IEnumerator coroutine = GrowCycle();
         StartCoroutine(coroutine);
