@@ -20,7 +20,7 @@ public class Compost : MonoBehaviour
         plant.gameObject.SetActive(false);
         yield return new WaitForSeconds(plant.PlantData.decompositionTime); 
         //Calcul de la valeur de compost à retourner
-        float valComp = (plant.Poids * 10) * plant.GetQuality(); 
+        float valComp = (plant.Weight * 10) * plant.GetQuality(); 
         ResourceManager.Instance.compostAmount += valComp;
         Destroy(plant.gameObject); 
     }

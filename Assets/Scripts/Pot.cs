@@ -9,7 +9,6 @@ public class Pot : MonoBehaviour, IPointerDownHandler
     [SerializeField] private GameObject plantPrefab;
     
     public Plant plant;
-    
 
     public float water;
     
@@ -43,6 +42,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         plant.SetSprite(plant.PlantData.plantSprites[2]);
         yield return new WaitForSeconds(stepTime);
         plant.SetSprite(plant.PlantData.plantSprites[3]);
+        plant.SetDraggable(true);
     }
 
     public void OnPointerDown(PointerEventData eventData)

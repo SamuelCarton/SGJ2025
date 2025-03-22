@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3555567240286806930}
   - component: {fileID: 1596992421739199248}
+  - component: {fileID: 5688492641900943733}
   m_Layer: 5
   m_Name: Scanner
   m_TagString: Untagged
@@ -51,7 +52,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDrop:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5688492641900943733}
+        m_TargetAssemblyTypeName: Scanner, Assembly-CSharp
+        m_MethodName: ScanPlant
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5688492641900943733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656532973376401768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b54d0dbc307442bac22952755e99520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3507224901309264514
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +434,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7603000e1bcbf751fad30d9f3f7d2888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToMove: {fileID: 0}
+  from: {fileID: 0}
+  to: {fileID: 0}
 --- !u!1 &4820936779072753850
 GameObject:
   m_ObjectHideFlags: 0

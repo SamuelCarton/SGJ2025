@@ -6,8 +6,7 @@ public enum lightLevel {underExposed, overExposed, exposed}
 public class Plant : MonoBehaviour, IDraggable
 {
     public Plant_Data PlantData;
-    public float Poids;
-    //ToxicRatio = quantité métaux lourds (entre autres)
+    public float Weight;
     public float ToxicRatio = 0.0f;
     public float WaterRatio = 0.0f;
     public float LightTime = 0.0f;
@@ -15,6 +14,7 @@ public class Plant : MonoBehaviour, IDraggable
     public bool isComestible = false; 
     
     [SerializeField] private Image plantImage;
+    private bool _canBeDragged = false;
 
     public float GetQuality()
     {
@@ -24,6 +24,11 @@ public class Plant : MonoBehaviour, IDraggable
     public bool IsAPlant()
     {
         return true;
+    }
+
+    public bool CanBeDragged()
+    {
+        return _canBeDragged;
     }
 
     public void SetSprite(Sprite plantDataPlantSprite)
@@ -58,5 +63,10 @@ public class Plant : MonoBehaviour, IDraggable
         }else{
             return false; 
         } 
+    }
+
+    public void SetDraggable(bool in_State)
+    {
+        _canBeDragged = in_State;
     }
 }
