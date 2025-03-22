@@ -18,8 +18,8 @@ public class UIManager : MonoBehaviour
         potUI.gameObject.SetActive(false);
     }
 
-    public void OpenScannerUI()
-    {
-        
+    public void OpenScannerUI(Plant plant){
+        scannerUI.gameObject.SetActive(true);
+        scannerUI.putVals(plant); 
     }
 }
