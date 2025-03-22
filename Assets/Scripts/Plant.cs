@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Plant : MonoBehaviour
+public class Plant : MonoBehaviour, IDraggable
 {
     public Plant_Data PlantData;
     public float Poids;
@@ -11,4 +11,8 @@ public class Plant : MonoBehaviour
         return 1.0f;
     }
 
+    public bool IsAPlant()
+    {
+        return true;
+    }
 }

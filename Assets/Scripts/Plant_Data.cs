@@ -7,7 +7,10 @@ public class Plant_Data : ScriptableObject
     public string plantName;
     public List<Sprite> plantSprites = new List<Sprite>();
 
-    [Header("Quality")]
-    public float HeavyMetalMinRatio;
-    
+    [Header("Comestible")]
+    public float ToxicRatioMin = 0.9f;
+    public float WaterRatioMin = 0.3f;
+    public float WaterRatioMax = 0.6f;
+    public float LightTimeMin = 0.2f;
+    public float LightTimeMax = 0.4f;
 }
