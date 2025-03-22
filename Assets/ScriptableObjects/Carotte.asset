@@ -12,5 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df40a704c964c874d9fbde4bf732146f, type: 3}
   m_Name: Carotte
   m_EditorClassIdentifier: 
+  plantName: 
+  decompositionTime: 0
+  fertilizerAmount: 0
   plantSprites:
-  - {fileID: 0}
+  - {fileID: 3020772161497335920, guid: 965c7840238038a46902b091aef7f8ae, type: 3}
+  - {fileID: -4773981935853235446, guid: 965c7840238038a46902b091aef7f8ae, type: 3}
+  - {fileID: 2395039623590252762, guid: 965c7840238038a46902b091aef7f8ae, type: 3}
+  - {fileID: 112941920424386951, guid: 965c7840238038a46902b091aef7f8ae, type: 3}
+  GrowingTime: 0
+  ToxicRatioMax: 0.1
+  WaterRatioMin: 0.3
+  WaterRatioMax: 0.6
+  LightTimeMin: 0.2
+  LightTimeMax: 0.4
