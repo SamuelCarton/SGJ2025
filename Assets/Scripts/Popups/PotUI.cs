@@ -40,6 +40,7 @@ public class PotUI : MonoBehaviour
 
     public void OnSelectCrop(Plant_Data data)
     {
+        _plantData = data;
         _tittle.text = data.plantName;
         _cropIcon.sprite = data.plantSprites[0];
         _cropIcon.enabled = true;
