@@ -14,7 +14,7 @@ public class PotUI : MonoBehaviour
     [SerializeField] private Slider _lightSlider;
     [SerializeField] private Slider _fertilizerSlider;
     
-    private PlantParametter _plantParametter;
+    private PlantParametter _plantParametter = new PlantParametter();
     private Pot pot;
     private Plant_Data _plantData;
 
