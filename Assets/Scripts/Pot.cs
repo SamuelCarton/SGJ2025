@@ -13,7 +13,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
 
     public float water;
     
-    public void StartGrowing(Plant_Data plantData, PlantParametter plantParametter)
+    public void StartGrowing(Plant_Data plantData, PlantParameter plantParametter)
     {
         GameObject plantInstance = Instantiate(plantPrefab, PotsManager.Instance.GetCanvas());
         plantInstance.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
