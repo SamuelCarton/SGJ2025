@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1697500743462626116}
   - component: {fileID: 8687193569195891072}
   - component: {fileID: 5479793413602687437}
+  - component: {fileID: -2884162632790100995}
   m_Layer: 5
   m_Name: Plant
   m_TagString: Untagged
@@ -63,6 +64,21 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &-2884162632790100995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4864952886959242240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98fd7797def420291851517c6512214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlantData: {fileID: 11400000, guid: a833127012b382f4bb9200f6a2f72ef8, type: 2}
+  Poids: 0
+  HeavyMetalRatio: 0
 --- !u!1 &5475861985718300794
 GameObject:
   m_ObjectHideFlags: 0

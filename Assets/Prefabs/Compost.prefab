@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6602402675413228429}
   - component: {fileID: -9007618262785302143}
+  - component: {fileID: 5406288006891455857}
   m_Layer: 5
   m_Name: Compost
   m_TagString: Untagged
@@ -159,6 +160,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 619639f96abb3e5ca88bfffd40af29fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDrop:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5406288006891455857}
+        m_TargetAssemblyTypeName: Compost, Assembly-CSharp
+        m_MethodName: compostStart
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5406288006891455857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5318362629964788847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce059a376c5d8b140ba63ccf9dfdf24f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6663581747153347917
