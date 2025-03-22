@@ -1,0 +1,769 @@
+fileFormatVersion: 2
+guid: 70cf1211dc9260e409026717ab550496
+importerOverride:
+  nativeImporterType: 2089858483
+  scriptedImporterType:
+    serializedVersion: 2
+    Hash: b10b55a1aa6a1aa32521bc0cab59632e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 225cf21ac7c233a7eae16763709f5b4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: Calque 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 680
+      y: 3103
+      width: 0
+      height: 0
+    spriteID: 6643c6b2bbdafd8c0af5cde4dbaeaf51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 680, y: 3103}
+    spritePosition: {x: 0, y: 1080}
+  - name: PLANTE1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 688
+      y: 3103
+      width: 0
+      height: 0
+    spriteID: 0632f7f514fe8fa61ac9576c09928140
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 688, y: 3103}
+    spritePosition: {x: 0, y: 1080}
+  - name: arrosage
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 3103
+      width: 0
+      height: 0
+    spriteID: 31bb541d1eedae672b43b2b70f3fdbc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 3103}
+    spritePosition: {x: 0, y: 1080}
+  - name: eclairage
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 704
+      y: 3103
+      width: 0
+      height: 0
+    spriteID: 75a4cd0cb7991e0e1bba942cb32e8b11
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 704, y: 3103}
+    spritePosition: {x: 0, y: 1080}
+  - name: ordinateur
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 712
+      y: 3103
+      width: 0
+      height: 0
+    spriteID: 9ac941331f1f2dfd99fdb4051d644368
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 712, y: 3103}
+    spritePosition: {x: 0, y: 1080}
+  - name: ptit bonhomme test
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1291
+      y: 1092
+      width: 540
+      height: 545
+    spriteID: a63725118c557495eacfcf75eca3ad37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1291, y: 1092}
+    spritePosition: {x: 438, y: 163}
+  - name: compost pret
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2743
+      width: 668
+      height: 375
+    spriteID: cfed191f31c3b1292bfb6b2202df8108
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2743}
+    spritePosition: {x: 668, y: 423}
+  - name: compost en cour
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 680
+      y: 2743
+      width: 275
+      height: 352
+    spriteID: 1e5b10ff6b5f1b4bdb58f632d4d89d46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 680, y: 2743}
+    spritePosition: {x: 581, y: 419}
+  - name: compost vide
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1279
+      height: 650
+    spriteID: a82958699a9d2adad81edb2f279a6aa5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 223, y: 144}
+  - name: BASE
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2230
+      width: 786
+      height: 505
+    spriteID: e617d00e75399db58a0a5764dac77f92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2230}
+    spritePosition: {x: 223, y: 547}
+  - name: BROUILLON
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 720
+      y: 3103
+      width: 0
+      height: 0
+    spriteID: cfefaf2afd28e2532b011bedddd013c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 720, y: 3103}
+    spritePosition: {x: 0, y: 1080}
+  - name: carrote pas mangeable final
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1000
+      y: 1750
+      width: 255
+      height: 441
+    spriteID: cc06c4b9a68271168afd4b8d3847a687
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1000, y: 1750}
+    spritePosition: {x: 960, y: 394}
+  - name: carote mangeable final
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 505
+      y: 3485
+      width: 255
+      height: 479
+    spriteID: 24138d08b4d045856b0d3662556768d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 505, y: 3485}
+    spritePosition: {x: 365, y: 373}
+  - name: stade 4 final
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3126
+      width: 493
+      height: 351
+    spriteID: 684059c4a066354b690fb8c8c8b0182b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3126}
+    spritePosition: {x: 1136, y: 225}
+  - name: stade 3 final
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3485
+      width: 493
+      height: 281
+    spriteID: e6894d65887c8997da7844aa2c423201
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3485}
+    spritePosition: {x: 405, y: 249}
+  - name: stade2 final
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3774
+      width: 493
+      height: 214
+    spriteID: 049d6c2e716eddd5ead7c23ddb6502ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3774}
+    spritePosition: {x: 1106, y: 675}
+  - name: stade 1 final
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1750
+      width: 988
+      height: 472
+    spriteID: 06898fe06fa27acb185f2dc08dfdf94d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1750}
+    spritePosition: {x: 405, y: 360}
+  - name: "Arri\xE8re-plan"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1920
+      height: 1080
+    spriteID: 3b66e6e121f0b1b9d8998f00517e3ba2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 1
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: Calque 1
+    spriteName: Calque 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6643c6b2bbdafd8c0af5cde4dbaeaf51
+    layerID: 5
+    mosaicPosition: {x: 680, y: 3103}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PLANTE1
+    spriteName: PLANTE1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0632f7f514fe8fa61ac9576c09928140
+    layerID: 4
+    mosaicPosition: {x: 688, y: 3103}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Groupe 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 05e6ad2adaf15ff06a81d056eb9ec90a
+    layerID: 18
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: arrosage
+    spriteName: arrosage
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 31bb541d1eedae672b43b2b70f3fdbc3
+    layerID: 23
+    mosaicPosition: {x: 696, y: 3103}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: eclairage
+    spriteName: eclairage
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 75a4cd0cb7991e0e1bba942cb32e8b11
+    layerID: 22
+    mosaicPosition: {x: 704, y: 3103}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ordinateur
+    spriteName: ordinateur
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 9ac941331f1f2dfd99fdb4051d644368
+    layerID: 21
+    mosaicPosition: {x: 712, y: 3103}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ptit bonhomme test
+    spriteName: ptit bonhomme test
+    isGroup: 0
+    parentIndex: 2
+    spriteID: a63725118c557495eacfcf75eca3ad37
+    layerID: 30
+    mosaicPosition: {x: 1291, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: compost pret
+    spriteName: compost pret
+    isGroup: 0
+    parentIndex: 2
+    spriteID: cfed191f31c3b1292bfb6b2202df8108
+    layerID: 24
+    mosaicPosition: {x: 4, y: 2743}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: compost en cour
+    spriteName: compost en cour
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 1e5b10ff6b5f1b4bdb58f632d4d89d46
+    layerID: 27
+    mosaicPosition: {x: 680, y: 2743}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: compost vide
+    spriteName: compost vide
+    isGroup: 0
+    parentIndex: 2
+    spriteID: a82958699a9d2adad81edb2f279a6aa5
+    layerID: 20
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: BASE
+    spriteName: BASE
+    isGroup: 0
+    parentIndex: 2
+    spriteID: e617d00e75399db58a0a5764dac77f92
+    layerID: 3
+    mosaicPosition: {x: 4, y: 2230}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  - name: BROUILLON
+    spriteName: BROUILLON
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cfefaf2afd28e2532b011bedddd013c4
+    layerID: 6
+    mosaicPosition: {x: 720, y: 3103}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: brouillon plante
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 9b71949353250387189e25e23f659cae
+    layerID: 10
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: carrote pas mangeable final
+    spriteName: carrote pas mangeable final
+    isGroup: 0
+    parentIndex: 12
+    spriteID: cc06c4b9a68271168afd4b8d3847a687
+    layerID: 16
+    mosaicPosition: {x: 1000, y: 1750}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: carote mangeable final
+    spriteName: carote mangeable final
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 24138d08b4d045856b0d3662556768d0
+    layerID: 14
+    mosaicPosition: {x: 505, y: 3485}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: stade 4 final
+    spriteName: stade 4 final
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 684059c4a066354b690fb8c8c8b0182b
+    layerID: 9
+    mosaicPosition: {x: 4, y: 3126}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: stade 3 final
+    spriteName: stade 3 final
+    isGroup: 0
+    parentIndex: 12
+    spriteID: e6894d65887c8997da7844aa2c423201
+    layerID: 8
+    mosaicPosition: {x: 4, y: 3485}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: stade2 final
+    spriteName: stade2 final
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 049d6c2e716eddd5ead7c23ddb6502ad
+    layerID: 7
+    mosaicPosition: {x: 4, y: 3774}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: stade 1 final
+    spriteName: stade 1 final
+    isGroup: 0
+    parentIndex: 12
+    spriteID: 06898fe06fa27acb185f2dc08dfdf94d
+    layerID: 12
+    mosaicPosition: {x: 4, y: 1750}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Arri\xE8re-plan"
+    spriteName: "Arri\xE8re-plan"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3b66e6e121f0b1b9d8998f00517e3ba2
+    layerID: 1
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 0
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.PlayerLoop;
 
-public class Pot : MonoBehaviour
+public class Pot : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private GameObject plantPrefab;
     public Plant plant;
@@ -33,5 +35,15 @@ public class Pot : MonoBehaviour
         plant.SetSprite(plant.PlantData.plantSprites[2]);
         yield return new WaitForSeconds(stepTime);
         plant.SetSprite(plant.PlantData.plantSprites[3]);
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        if (plant != null)
+        {
+            return;
+        }
+
+        UIManager.Instance.OpenPotUI(this);
     }
 }
