@@ -63,4 +63,9 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         }
         UIManager.Instance.OpenPotUI(this);
     }
+
+    public void Click()
+    {
+        UIManager.Instance.OpenPotUI(this);
+    }
 }
