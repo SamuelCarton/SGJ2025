@@ -28,7 +28,7 @@ public class EndGoal : MonoBehaviour
             return;
         }
 
-        if (GoalManager.Instance.allPlants.Contains(plant.PlantData))
+        if (!GoalManager.Instance.allPlants.Contains(plant.PlantData))
         {
             UIManager.Instance.OpenPopup("Vous avez déjà réussi à produire un légume de ce type.");
             return;
