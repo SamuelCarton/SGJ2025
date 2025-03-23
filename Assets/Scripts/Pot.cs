@@ -7,6 +7,7 @@ using UnityEngine.PlayerLoop;
 public class Pot : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private GameObject plantPrefab;
+    [SerializeField] private VisualPotMachine visual;
     
     public Plant plant;
 
@@ -14,6 +15,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
     
     public void StartGrowing(Plant_Data plantData, PlantParameter plantParametter)
     {
+        visual.StartLight(plantParametter.Light);
         GameObject plantInstance = Instantiate(plantPrefab, PotsManager.Instance.GetCanvas());
         plantInstance.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
         plant = plantInstance.GetComponent<Plant>();
@@ -44,6 +46,9 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         yield return new WaitForSeconds(stepTime);
         plant.SetSprite(plant.PlantData.plantSprites[3]);
         plant.SetDraggable(true);
+        plant = null;
+        yield return new WaitForSeconds(stepTime);
+        visual.StopLight();
     }
 
     public void OnPointerDown(PointerEventData eventData)
