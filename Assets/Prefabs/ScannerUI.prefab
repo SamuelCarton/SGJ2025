@@ -1304,6 +1304,8 @@ MonoBehaviour:
   valLight: {fileID: 7692817638780756676}
   valTox: {fileID: 3476396622738771981}
   engrais: {fileID: 1247633502229951387}
+  okIcon: {fileID: 0}
+  noIcon: {fileID: 0}
 --- !u!1 &8597700887091913243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,8 +1491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 258.9, y: -155.9}
-  m_SizeDelta: {x: 133.1291, y: 78.6995}
+  m_AnchoredPosition: {x: -37.2328, y: -14.2712}
+  m_SizeDelta: {x: 2275.1184, y: 1223.4347}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &932868563527529407
 CanvasRenderer:
