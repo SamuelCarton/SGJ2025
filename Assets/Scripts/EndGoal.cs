@@ -27,7 +27,7 @@ public class EndGoal : MonoBehaviour
 
         if (GoalManager.Instance.allPlants.Contains(plant.PlantData))
             return;
-        
+        SFXManager.Instance.PlaySuccesSound();
         OnPlantDiscovered.Invoke(plant.PlantData);
         plant.SetDraggable(false);
         glassImage.enabled = true;
