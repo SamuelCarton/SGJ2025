@@ -25,5 +25,5 @@ MonoBehaviour:
   ToxicRatioMax: 0.7
   WaterRatioMin: 0.5
   WaterRatioMax: 0.6
-  LightTimeMin: 0.2
-  LightTimeMax: 0.4
+  LightTimeMin: 0.4
+  LightTimeMax: 0.5
