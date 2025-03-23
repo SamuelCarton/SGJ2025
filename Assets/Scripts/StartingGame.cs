@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartingGame : MonoBehaviour
 {
@@ -11,5 +12,13 @@ public class StartingGame : MonoBehaviour
             "Mars fait l’objet de convoitises depuis plusieurs siècles, de nos jours l’Homme est sur le point de réaliser ce grand rêve. " +
             "Vous avez été choisis en tant qu'agriculteur martien pour préparer l’arrivée de plusieurs colons."
             );
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("StartMenu");
+        }
     }
 }
