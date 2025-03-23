@@ -56,6 +56,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         {
             return;
         }
-        rectTransform.anchoredPosition += eventData.delta;
+        rectTransform.anchoredPosition += eventData.delta / ScaleManager.Instance.canvas.scaleFactor;
     }
 }
