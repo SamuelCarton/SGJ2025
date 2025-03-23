@@ -112,7 +112,7 @@ ScriptedImporter:
       y: 364
       width: 202
       height: 96
-    spriteID: 9c7cdaec7a97d794a9ac5d7229d8636d
+    spriteID: 14e4e8969f37edc43a15c2e139da0292
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -251,7 +251,7 @@ ScriptedImporter:
     spriteName: "compost termin\xE9 v2"
     isGroup: 0
     parentIndex: -1
-    spriteID: 9c7cdaec7a97d794a9ac5d7229d8636d
+    spriteID: 14e4e8969f37edc43a15c2e139da0292
     layerID: 9
     mosaicPosition: {x: 4, y: 364}
     flatten: 0
