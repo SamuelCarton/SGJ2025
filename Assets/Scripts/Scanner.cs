@@ -11,6 +11,7 @@ public class Scanner : MonoBehaviour
         {
             return;
         }
+        SFXManager.Instance.PlayScannerSound();
         Plant plant = (Plant) draggable;
         
         IEnumerator coroutine = MoveScan();

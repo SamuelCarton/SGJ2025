@@ -87,8 +87,8 @@ public class PotUI : MonoBehaviour
             _fertilizerSlider.value = value;
         }
         _plantParametter.Fertilizer = value;
-        _fetilizerValue.text = "Fertilizer: " + (value * 100).ToString("F2") + "%";
-        _regolithValue.text = "Regolith: " + ((1 - value) * 100).ToString("F2") + "%";
+        _fetilizerValue.text = "Regolith: " + ((1 - value) * 100).ToString("F2") + "%";
+        _regolithValue.text = "Ferilizer: " + (value * 100).ToString("F2") + "%";
         ResourceManager.Instance.AddCompost(-value * ResourceManager.Instance.TotalMaterialInPot);
     }
 }
