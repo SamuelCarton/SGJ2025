@@ -27,6 +27,8 @@ public class PotUI : MonoBehaviour
         _waterSlider.onValueChanged.AddListener(OnWaterSliderValueChanged);
         _fertilizerSlider.onValueChanged.AddListener(OnFertilizerSliderValueChanged);
         _lightSlider.onValueChanged.AddListener(OnLightSliderValueChanged);
+        _waterSlider.value = 0.5f;
+        _lightSlider.value = 0.5f;
     }
 
     void OnDestroy()
