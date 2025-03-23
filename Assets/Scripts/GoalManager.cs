@@ -24,6 +24,7 @@ public class GoalManager : MonoBehaviour
         if (allPlants.Count == 0)
         {
             FinishGame?.Invoke();
+            UIManager.Instance.OpenPopup("Félicitations!!! Après une longue période de test, vous avez enfin réussi à faire pousser différents plants comestibles grâce à votre réflexion. Vos résultats seront précieux pour aider les futures générations. Grâce à vous, elles pourront alors survivre et améliorer leurs conditions de vie.");
         }
     }
 }
