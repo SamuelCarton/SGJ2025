@@ -18,9 +18,15 @@ public class EndGoal : MonoBehaviour
     public void ValidatePlant(IDraggable draggable)
     {
         Plant plant = draggable as Plant;
+        
         if (plant == null)
-        {
             return;
+        
+        if (plant.GetQuality() < 1.0f)
+            return;
+
+        if(!plant.isComestible){
+            return; 
         }
 
         if (GoalManager.Instance.allPlants.Contains(plant.PlantData))

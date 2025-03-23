@@ -22,6 +22,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         plant.PlantData = plantData;
         plant.LightTime = plantParametter.Light;
         plant.WaterRatio = plantParametter.Water;
+        //recalculer la toxicité 
         plant.ToxicRatio = 1 - plantParametter.Fertilizer;
         plant.Weight = plantData.fertilizerAmount * plantData.PlantValidConditionRatio(plantParametter);
         
