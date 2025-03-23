@@ -6,6 +6,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private PotUI potUI;
     [SerializeField] private ScannerUI scannerUI;
+    [SerializeField] private PopupMessage popupMessage;
     
     void Awake()
     {
@@ -23,5 +24,11 @@ public class UIManager : MonoBehaviour
         scannerUI.putVals(plant); 
         scannerUI.gameObject.SetActive(true);
         
+    }
+
+    public void OpenPopup(string message)
+    {
+        popupMessage.gameObject.SetActive(true);
+        popupMessage.SetMessage(message);
     }
 }
