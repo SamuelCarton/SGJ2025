@@ -19,7 +19,7 @@ public class ScannerUI : MonoBehaviour
         okIcon.gameObject.SetActive(false);
         noIcon.gameObject.SetActive(false);
         
-        plantName.text = plant.name;
+        plantName.text = plant.PlantData.plantName;
         if(plant.Toxic()){
             valTox.text = "Trop élevé"; 
         }else{

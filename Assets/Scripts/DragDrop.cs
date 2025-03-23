@@ -7,6 +7,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     [SerializeField] private float alphaOnDrag = 1f;
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
+    private bool firstDragging = true;
 
     private void Awake()
     {
@@ -21,6 +22,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (firstDragging)
+        {
+            SFXManager.Instance.PlayPlantSound();
+            firstDragging = false;
+        }
         HighlightIDropTargetOnDrag.OnDragPlantStart?.Invoke();
         IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
         if (draggable == null || draggable.CanBeDragged() == false)
