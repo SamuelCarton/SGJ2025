@@ -1254,7 +1254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1550238717922529603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1305,6 +1305,8 @@ MonoBehaviour:
   valLight: {fileID: 7692817638780756676}
   valTox: {fileID: 3476396622738771981}
   engrais: {fileID: 1247633502229951387}
+  okIcon: {fileID: 0}
+  noIcon: {fileID: 0}
 --- !u!1 &8597700887091913243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,7 +1475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1315574425900551487
 RectTransform:
   m_ObjectHideFlags: 0
