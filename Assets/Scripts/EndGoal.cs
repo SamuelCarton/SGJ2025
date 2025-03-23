@@ -23,10 +23,16 @@ public class EndGoal : MonoBehaviour
             return;
         
         if (plant.GetQuality() < 0.5f)
+        {
+            UIManager.Instance.OpenPopup("Ce Legume n'est pas propre à la consommation");
             return;
+        }
 
         if (GoalManager.Instance.allPlants.Contains(plant.PlantData))
+        {
+            UIManager.Instance.OpenPopup("Vous avez déjà réussi à produire un légume de ce type.");
             return;
+        }
         SFXManager.Instance.PlaySuccesSound();
         OnPlantDiscovered.Invoke(plant.PlantData);
         plant.SetDraggable(false);
