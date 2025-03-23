@@ -16,7 +16,7 @@ MonoBehaviour:
   decompositionTime: 1
   fertilizerAmount: 9
   plantSprites:
-  - {fileID: 21300000, guid: 2baf4415a7d46f34f8c875db65327f67, type: 3}
+  - {fileID: 21300000, guid: 43979283670a0084e8d1bfccc48c37fa, type: 3}
   - {fileID: 21300000, guid: 49df547fa6139044d8ee83bfa6735348, type: 3}
   - {fileID: 21300000, guid: e20b6d05c5e2afd4f9162f1e6c0cc4c2, type: 3}
   - {fileID: 21300000, guid: d48e4aba04d7d3c458be078eabad7c41, type: 3}
