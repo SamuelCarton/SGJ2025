@@ -33,6 +33,7 @@ public class Compost : MonoBehaviour
         if (!draggable.IsAPlant()){
             return;
         }
+        SFXManager.Instance.PlayMotorSound();
         StartCoroutine(compost((Plant)draggable));
         plantInCompost += 1;
     }
@@ -46,6 +47,8 @@ public class Compost : MonoBehaviour
         ResourceManager.Instance.AddCompost(valComp);
         Destroy(plant.gameObject);
         plantInCompost -= 1;
+        SFXManager.Instance.StopMotorSound();
+        SFXManager.Instance.PlayDingSound();
     }
 
 }

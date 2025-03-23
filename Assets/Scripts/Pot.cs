@@ -15,6 +15,8 @@ public class Pot : MonoBehaviour, IPointerDownHandler
     
     public void StartGrowing(Plant_Data plantData, PlantParameter plantParametter)
     {
+        SFXManager.Instance.PlayPlantSound();
+        SFXManager.Instance.PlayWaterSound();
         visual.StartLight(plantParametter.Light);
         GameObject plantInstance = Instantiate(plantPrefab, PotsManager.Instance.GetCanvas());
         plantInstance.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
@@ -50,6 +52,7 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         plant = null;
         yield return new WaitForSeconds(stepTime);
         visual.StopLight();
+        SFXManager.Instance.StopWaterSound();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -58,7 +61,6 @@ public class Pot : MonoBehaviour, IPointerDownHandler
         {
             return;
         }
-
         UIManager.Instance.OpenPotUI(this);
     }
 }
