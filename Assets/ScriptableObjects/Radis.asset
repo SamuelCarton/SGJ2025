@@ -22,8 +22,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 41b7f98614b78db45b5430ab639d224c, type: 3}
   SpriteFull: {fileID: 21300000, guid: 4288e6b8eae920b46bfea652869afcc8, type: 3}
   GrowingTime: 4
-  ToxicRatioMax: 0.2
-  WaterRatioMin: 0.3
+  ToxicRatioMax: 0.7
+  WaterRatioMin: 0.5
   WaterRatioMax: 0.6
   LightTimeMin: 0.2
   LightTimeMax: 0.4

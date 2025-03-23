@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,19 +9,21 @@ public class ScannerUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI valWater; 
     [SerializeField] private TextMeshProUGUI valLight;
     [SerializeField] private TextMeshProUGUI valTox;  
-    [SerializeField] private TextMeshProUGUI engrais; 
+    [SerializeField] private TextMeshProUGUI engrais;
+    [SerializeField] private Image okIcon;
+    [SerializeField] private Image noIcon;
 
-
-    
     public void putVals(Plant plant){
         //On désactive le texte d'engrais à chaque fois 
         engrais.gameObject.SetActive(false);
-
+        okIcon.gameObject.SetActive(false);
+        noIcon.gameObject.SetActive(false);
+        
         plantName.text = plant.name;
         if(plant.Toxic()){
-            valTox.text = "Teneur en excès"; 
+            valTox.text = "Trop élevé"; 
         }else{
-            valTox.text = "Permissible"; 
+            valTox.text = "Acceptable"; 
         }
 
         switch(plant.LightLevel()){
@@ -54,9 +57,13 @@ public class ScannerUI : MonoBehaviour
             engrais.gameObject.SetActive(true);  
         }
 
-
-    
-    }   
-
-
+        if (plant.GetQuality() < 0.5f)
+        {
+            noIcon.gameObject.SetActive(true);
+        }
+        else
+        {
+            okIcon.gameObject.SetActive(true);
+        }
+    }
 }
