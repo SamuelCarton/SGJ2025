@@ -21,6 +21,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        HighlightIDropTargetOnDrag.OnDragPlantStart?.Invoke();
         IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
         if (draggable == null || draggable.CanBeDragged() == false)
         {
@@ -38,6 +39,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        HighlightIDropTargetOnDrag.OnDragPlantEnd?.Invoke();
         IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
         if (draggable == null || draggable.CanBeDragged() == false)
         {
