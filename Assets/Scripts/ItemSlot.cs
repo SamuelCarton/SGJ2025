@@ -8,6 +8,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
     
     public void OnDrop(PointerEventData eventData)
     {
+        HighlightIDropTargetOnDrag.OnDragPlantEnd?.Invoke();
         IDraggable draggable = eventData.pointerDrag.GetComponent<IDraggable>();
         if (draggable == null || draggable.CanBeDragged() == false)
         {
