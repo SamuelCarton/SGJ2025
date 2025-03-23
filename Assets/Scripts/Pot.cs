@@ -15,7 +15,6 @@ public class Pot : MonoBehaviour, IPointerDownHandler
     
     public void StartGrowing(Plant_Data plantData, PlantParameter plantParametter)
     {
-        SFXManager.Instance.PlayPlantSound();
         SFXManager.Instance.PlayWaterSound();
         visual.StartLight(plantParametter.Light);
         GameObject plantInstance = Instantiate(plantPrefab, PotsManager.Instance.GetCanvas());
