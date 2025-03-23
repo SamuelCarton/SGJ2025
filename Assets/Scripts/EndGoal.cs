@@ -22,12 +22,8 @@ public class EndGoal : MonoBehaviour
         if (plant == null)
             return;
         
-        if (plant.GetQuality() < 1.0f)
+        if (plant.GetQuality() < 0.5f)
             return;
-
-        if(!plant.isComestible){
-            return; 
-        }
 
         if (GoalManager.Instance.allPlants.Contains(plant.PlantData))
             return;
