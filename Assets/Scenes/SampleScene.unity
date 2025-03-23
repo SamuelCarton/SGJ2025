@@ -1819,6 +1819,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1980054833}
     m_Modifications:
+    - target: {fileID: 421990207593268955, guid: e544af8aee246304c8c75c20d588045c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 104.9128
+      objectReference: {fileID: 0}
+    - target: {fileID: 421990207593268955, guid: e544af8aee246304c8c75c20d588045c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -87.45639
+      objectReference: {fileID: 0}
     - target: {fileID: 1550238717922529603, guid: e544af8aee246304c8c75c20d588045c, type: 3}
       propertyPath: m_SizeDelta.x
       value: 700
@@ -1992,7 +2000,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 2
