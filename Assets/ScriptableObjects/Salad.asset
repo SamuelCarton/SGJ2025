@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df40a704c964c874d9fbde4bf732146f, type: 3}
   m_Name: Salad
   m_EditorClassIdentifier: 
-  plantName: Salad
+  plantName: Salade
   decompositionTime: 1
   fertilizerAmount: 4
   plantSprites:
