@@ -18,7 +18,10 @@ public class Plant : MonoBehaviour, IDraggable
 
     public float GetQuality()
     {
-        return 1.0f;
+        if (!Toxic() && HydratationLevel() == hydratationLevel.hydrated && LightLevel() == lightLevel.exposed && ToxicRatio > 0.5f){
+            return 1.0f; 
+        }
+        return 0; 
     }
 
     public bool IsAPlant()

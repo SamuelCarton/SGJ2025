@@ -23,6 +23,10 @@ public class EndGoal : MonoBehaviour
             return;
         }
 
+        if(!plant.isComestible){
+            return; 
+        }
+
         if (GoalManager.Instance.allPlants.Contains(plant.PlantData))
             return;
         
