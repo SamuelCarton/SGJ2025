@@ -8,11 +8,19 @@ public class Compost : MonoBehaviour
 {
     private List<Plant> plantes;
     [SerializeField] private Slider _compostAmountBar;
+    [SerializeField] private GameObject _compostImage;
+    private int plantInCompost = 0;
 
     private void Start()
     {
         ResourceManager.Instance.OnCompostAmountChanged += SetBarValue;
         ResourceManager.Instance.AddCompost(0);
+    }
+
+    private void Update()
+    {
+        if (plantInCompost == 0) return;
+        _compostImage.transform.Rotate(new Vector3(0, 0, -3));
     }
 
     private void SetBarValue(float value)
@@ -25,7 +33,8 @@ public class Compost : MonoBehaviour
         if (!draggable.IsAPlant()){
             return;
         }
-        StartCoroutine(compost((Plant)draggable)); 
+        StartCoroutine(compost((Plant)draggable));
+        plantInCompost += 1;
     }
 
 
@@ -35,7 +44,8 @@ public class Compost : MonoBehaviour
         //Calcul de la valeur de compost à retourner
         float valComp = plant.Weight; 
         ResourceManager.Instance.AddCompost(valComp);
-        Destroy(plant.gameObject); 
+        Destroy(plant.gameObject);
+        plantInCompost -= 1;
     }
 
 }
